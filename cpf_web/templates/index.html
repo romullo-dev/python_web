@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Verificador de CPF</title>
+    <style>
+        body {
+            font-family: Arial;
+            background: #0f172a;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .box {
+            background: #1e293b;
+            padding: 30px;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        input {
+            padding: 10px;
+            width: 200px;
+            margin-bottom: 10px;
+        }
+
+        button {
+            padding: 10px 20px;
+            background: #22c55e;
+            border: none;
+            color: white;
+            cursor: pointer;
+        }
+
+        .resultado {
+            margin-top: 15px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+<div class="box">
+    <h2>Verificador de CPF</h2>
+
+    <form method="POST">
+        <input type="text" name="cpf" placeholder="Digite o CPF" maxlength="14">
+        <br>
+        <button type="submit">Verificar</button>
+    </form>
+
+    {% if resultado %}
+        <div class="resultado">{{ resultado }}</div>
+    {% endif %}
+</div>
+
+</body>
+</html>
