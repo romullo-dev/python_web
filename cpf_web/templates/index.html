@@ -11,7 +11,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 100vh;
+            height: 90vh;
         }
 
         .box {
@@ -19,11 +19,13 @@
             padding: 30px;
             border-radius: 10px;
             text-align: center;
+            height: 230px;
+            width: 300px;
         }
 
         input {
             padding: 10px;
-            width: 200px;
+            width: 230px;
             margin-bottom: 10px;
         }
 
@@ -44,10 +46,12 @@
 <body>
 
 <div class="box">
+    <br>
     <h2>Verificador de CPF</h2>
 
     <form method="POST">
         <input type="text" name="cpf" placeholder="Digite o CPF" maxlength="14">
+        <br>
         <br>
         <button type="submit">Verificar</button>
     </form>
